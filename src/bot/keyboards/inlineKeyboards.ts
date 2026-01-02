@@ -23,12 +23,12 @@ export function getMainMenuKeyboard(): TelegramBot.InlineKeyboardMarkup {
         { text: '📊 Resumo', callback_data: 'menu_resumo' },
       ],
       [
-        { text: '📝 Ultimas Transacoes', callback_data: 'menu_ultimas' },
+        { text: '📝 Ultimas', callback_data: 'menu_ultimas' },
         { text: '📁 Categorias', callback_data: 'menu_categorias' },
       ],
       [
-        { text: '💹 Orcamento', callback_data: 'menu_orcamento' },
-        { text: '📈 Investimentos', callback_data: 'menu_investimentos' },
+        { text: '🐷 Caixinhas', callback_data: 'menu_caixinhas' },
+        { text: '🔔 Contas', callback_data: 'menu_contas' },
       ],
     ],
   };

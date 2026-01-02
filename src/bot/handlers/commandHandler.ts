@@ -34,13 +34,14 @@ Envie mensagens naturais sobre suas transacoes:
 • "gastei 150 no mercado"
 • "recebi 5000 de salario"
 • "paguei 89,90 de luz"
-• "uber 25 reais"
 
-*Comandos disponiveis:*
-/saldo - Ver saldo atual
-/resumo - Resumo do mes
+*Comandos:*
+/saldo - Saldo do mes
+/resumo - Resumo completo
 /ultimas - Ultimas transacoes
 /categorias - Ver categorias
+/caixinhas - Minhas caixinhas
+/contas - Contas a pagar
 /ajuda - Ajuda detalhada
 
 Ou use o menu abaixo:

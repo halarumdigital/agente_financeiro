@@ -9,6 +9,8 @@ import {
   handleSummary,
   handleRecentTransactions,
   handleCategories,
+  handleListSavingsBoxes,
+  handleListBills,
 } from './commandHandler';
 import { formatCurrency } from '../../utils/formatters';
 import { handleBillCallback } from '../../services/billScheduler';
@@ -103,13 +105,13 @@ export async function handleCallback(
     return;
   }
 
-  if (data === 'menu_orcamento') {
-    await bot.sendMessage(chatId, '💹 Funcionalidade de orcamento em desenvolvimento...');
+  if (data === 'menu_caixinhas') {
+    await handleListSavingsBoxes(bot, { chat: { id: chatId } } as TelegramBot.Message);
     return;
   }
 
-  if (data === 'menu_investimentos') {
-    await bot.sendMessage(chatId, '📈 Funcionalidade de investimentos em desenvolvimento...');
+  if (data === 'menu_contas') {
+    await handleListBills(bot, { chat: { id: chatId } } as TelegramBot.Message);
     return;
   }
 }
